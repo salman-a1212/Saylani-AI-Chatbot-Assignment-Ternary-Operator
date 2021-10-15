@@ -22,3 +22,22 @@
 .hide {
   display: none;
 }
+
+#form {
+  margin: 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#result,
+h2 {
+  border: 1px solid #ddd;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+}
