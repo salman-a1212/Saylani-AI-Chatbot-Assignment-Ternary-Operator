@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("https://www.statnews.com/wp-content/uploads/2021/03/AdobeStock_410521768-645x645.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hide {
