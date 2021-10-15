@@ -48,7 +48,15 @@ form.oninput = function vacCheck() {
     ? (hide.style.display = "block")
     : (hide.style.display = "none");
 
+  //   dose === "Single"
+  //     ? (result.innerText = "Please complete the vaccination dosage")
+  //     : (result.innerText = "You are safe! Thank you!");
+
   age >= 16 && vaccinate === "No"
     ? (result.innerText = "Please visit your nearest vaccination center ASAP!")
     : (result.innerText = "You are safe! Thank you!");
+
+  age < 16 && vaccinate === "No"
+    ? (result.innerText = "You are not eligible for vaccination")
+    : (result.innerText = "Stay at home don't go near school :)");
 };
