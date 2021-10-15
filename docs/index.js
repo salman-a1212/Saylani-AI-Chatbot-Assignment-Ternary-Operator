@@ -56,7 +56,7 @@ form.oninput = function vacCheck() {
     ? (result.innerText = "Please visit your nearest vaccination center ASAP!")
     : (result.innerText = "You are safe! Thank you!");
 
-  age < 16 && vaccinate === "No"
-    ? (result.innerText = "You are not eligible for vaccination")
-    : (result.innerText = "Stay at home don't go near school :)");
+  //   age < 16 && vaccinate === "No"
+  //     ? (result.innerText = "You are not eligible for vaccination")
+  //     : (result.innerText = "Stay at home don't go near school :)");
 };
