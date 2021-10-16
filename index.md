@@ -82,37 +82,19 @@ p {
 </style>
 
 <script>
-    form.oninput = function vacCheck() {
+   form.oninput = function vacCheck() {
   let age = document.getElementById("age").value;
   let vaccinate = document.getElementById("vaccinate").value;
   let dose = document.getElementById("dose").value;
   let hide = document.getElementById("hide");
   let result = document.getElementById("result");
 
-  //   console.log("age", age);
-  //   console.log("vaccinate", vaccinate);
-  //   console.log("dose", dose);
-  //   console.log("hide", hide);
-
-  //   if (vaccinate === "Yes") {
-  //     hide.style.display = "block";
-  //   } else {
-  //     hide.style.display = "none";
-  //   }
-
   age >= 16 && vaccinate === "Yes"
     ? (hide.style.display = "block")
     : (hide.style.display = "none");
 
-  //   dose === "Single"
-  //     ? (result.innerText = "Please complete the vaccination dosage")
-  //     : (result.innerText = "You are safe! Thank you!");
-
   age >= 16 && vaccinate === "No"
     ? (result.innerText = "Please visit your nearest vaccination center ASAP!")
-    : (result.innerText = "You are safe! Thank you!");
-
-//   age < 16 && vaccinate === "No"
-//     ? (result.innerText = "You are not eligible for vaccination")
-//     : (result.innerText = "Stay at home don't go near school :)");
+    : (result.innerText = "You are not eligible for vaccination");
 };
+</script>
